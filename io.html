@@ -5,7 +5,10 @@
     <title>Document</title>
     <style>
 
-    .ir{font-size:0}
+    .ir{font-size:0;width:0; height:0; overflow: hidden;position: absolute; left:-9999px; top:-9999px; }
+    .strong{background:url(astr.png) no-repeat; padding-left:20px}
+    /*.strong:before{content: "*"}*/
+
 
     </style>
 </head>
@@ -16,7 +19,7 @@
 
             <ul>
                 <li>
-                    <label for="userid">아이디</label>
+                    <label for="userid" class="strong"><span class="ir">필수항목</span>아이디</label>
                     <input type="text"  id="userid" />
                 </li>
 
