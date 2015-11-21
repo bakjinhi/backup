@@ -1,0 +1,32 @@
+header {
+  border: 1px #F00 solid;
+  border-radius: 30px 60px 20px 50px;
+  -webkit-border-radius: 30px 60px 20px 50px;
+  -moz-border-radius: 30px 60px 20px 50px;
+  -o-border-radius: 30px 60px 20px 50px;
+  -ms-border-radius: 30px 60px 20px 50px;
+}
+header div.wrap {
+  margin: auto;
+  border: 1px #F00 solid;
+  width: 900px;
+  height: 80px;
+}
+header div.wrap h1.logo {
+  float: left;
+}
+header div.wrap nav.gnb {
+  float: right;
+}
+header div.wrap nav.gnb li {
+  display: inline-block;
+}
+header div.wrap nav.gnb li a {
+  border: 1px #F00 solid;
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+}
+header div.wrap nav.gnb li a:hover {
+  color: #111111;
+}

@@ -1,0 +1,38 @@
+
+@trsize : 30px;
+@testcolor:#F00;
+@hovercolor:#111;
+.radius(@rud-tl:10px,@rud-tr:10px,@rud-bl:10px,@rud-br:10px){
+    border-radius: @rud-tl @rud-tr @rud-bl @rud-br;
+    -webkit-border-radius: @rud-tl @rud-tr @rud-bl @rud-br;
+    -moz-border-radius: @rud-tl @rud-tr @rud-bl @rud-br;
+    -o-border-radius: @rud-tl @rud-tr @rud-bl @rud-br;
+    -ms-border-radius: @rud-tl @rud-tr @rud-bl @rud-br;
+}
+
+header{
+    border:1px #F00 solid;
+    .radius(30px,@trsize*2,20px,50px);
+    div.wrap{
+        margin: auto;
+        border:1px #F00 solid;
+        width:900px;
+        height:80px;
+        h1.logo{
+            float:left;
+        }
+        nav.gnb{
+            float:right;
+            li{
+                display: inline-block;
+                a{
+                    border:1px #F00 solid;
+                    color:blue;
+                    font-size:20px;
+                    text-decoration:none;
+                    &:hover{color:@hovercolor}
+                }
+            }
+        }
+    }
+}
