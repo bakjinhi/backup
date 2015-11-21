@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+.box {
+  margin: 0 auto;
+  max-width: 1000px;
+  border: 1px #F00 solid;
+  font-size: 0;
+  text-align: center;
+}
+.box li {
+  font-size: 40px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25%;
+  height: 250px;
+  box-sizing: border-box;
+  border: 1px #F00 solid;
+}
+.box li:hover {
+  background: #ff9999;
+}
+@media screen and (max-width: 500px) {
+  .box li {
+    width: 33.2%;
+  }
+}
