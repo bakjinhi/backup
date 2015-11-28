@@ -1,6 +1,8 @@
 *{margin:0; padding:0;}
 ul,ol{list-style: none;}
 
+@paht:"http://www.naver.com/images/";
+
 @pc-veiw-maxW:1000px;
 @pc-grid-itemW:250px;
 @mobile-veiw-maxW:500px;
@@ -14,7 +16,7 @@ ul,ol{list-style: none;}
 }
 
 .percWidth(@maxW,@itemW){
-    width:percentage((@itemW/@maxW));
+    width:percentage(@itemW/@maxW);
 }
 
 .box{
@@ -29,12 +31,13 @@ ul,ol{list-style: none;}
         height:@pc-grid-itemW;
         box-sizing:border-box;
         border:1px #F00 solid;
+        transition: 500ms;
         &:hover{
             background: lighten(#F00, 30%);
         }
     }
 }
-
+//타블릿
 @media screen and (max-width:@mobile-veiw-maxW){
     .box{
         li{
